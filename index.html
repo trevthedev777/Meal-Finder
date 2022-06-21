@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets and Font Awesome -->
+    <script src="https://kit.fontawesome.com/11347facfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Meal Finder | Fetch & MealDb API</title>
+    <title>Meal Finder | Fetch & MealDB API</title>
 </head>
 <body>
+
+    <div class="container">
+        <h1>Meal Finder</h1>
+        <div class="flex">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for meals or keywords">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <button class="random-btn" id="random">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+
+        <div id="result-heading">
+            <div id="meals" class="meals"></div>
+            <div id="single-meal"></div>
+        </div>
+    </div>
     <!-- JavaScript -->
     <script src="./assets/js/app.js"></script>
 </body>
